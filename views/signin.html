@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+
+    <div class="container">
+
+    <!-- show any messages that come back with authentication -->
+    {% if (error.length > 0) %}
+        <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+    {% if (success.length > 0) %}
+        <div class="alert alert-success">{{ success }}</div>
+    {% endif %}
+        
+      <form action="/signin" method="post" class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <p class="form-signup">Need an account? <a href="/signup">Sign up</a>!</p>
+      </form>
+    </div> <!-- /container -->
+{% endblock %}
