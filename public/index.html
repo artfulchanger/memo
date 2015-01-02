@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html ng-app="MyApp">
+<html ng-app="MyApp"><!-- Root element of the application -->
 <head>
-  <base href="/">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ShowTrackr</title>
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  <link href="stylesheets/style.css" rel="stylesheet">
+    <!-- Clean URLs without the # symbol -->
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShowTrackr</title>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
 
-<div ng-view></div>
+    <div ng-view></div>
 
-<script src="vendor/angular/angular.min.js"></script>
-<script src="vendor/angular/angular-messages.min.js"></script>
-<script src="vendor/angular/angular-resource.min.js"></script>
-<script src="vendor/angular/angular-route.min.js"></script>
-<script src="vendor/angular/angular-cookies.min.js"></script>
-<script src="vendor/moment.min.js"></script>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular/angular-messages.min.js"></script>
+    <script src="vendor/angular/angular-resource.min.js"></script>
+    <script src="vendor/angular/angular-route.min.js"></script>
+    <script src="vendor/angular/angular-cookies.min.js"></script>
+    <script src="vendor/moment-with-locales.min.js"></script>
+
+    <script src="vendor/app.js"></script>
+
 </body>
 </html>
