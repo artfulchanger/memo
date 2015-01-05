@@ -1,2 +1,2 @@
-db/
-db.log
+db/*
+db.log/*

@@ -46,6 +46,10 @@ module.exports = function(app, passport) {
       })(req, res, next);
     });    
     
+    app.get('/signout', function(req, res) {
+            req.logout();
+            res.redirect('/');
+        });
     
     // catch 404 and forward to error handler
     app.use(function(req, res, next) {

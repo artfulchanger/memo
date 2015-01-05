@@ -1,32 +1,92 @@
-2015-01-05T08:34:00.564+0100 [initandlisten] MongoDB starting : pid=23435 port=27017 dbpath=./db 64-bit host=Andreas-iMac.local
-2015-01-05T08:34:00.564+0100 [initandlisten] db version v2.6.6
-2015-01-05T08:34:00.564+0100 [initandlisten] git version: 608e8bc319627693b04cc7da29ecc300a5f45a1f
-2015-01-05T08:34:00.564+0100 [initandlisten] build info: Darwin mci-osx108-3.build.10gen.cc 12.3.0 Darwin Kernel Version 12.3.0: Sun Jan  6 22:37:10 PST 2013; root:xnu-2050.22.13~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
-2015-01-05T08:34:00.564+0100 [initandlisten] allocator: system
-2015-01-05T08:34:00.564+0100 [initandlisten] options: { storage: { dbPath: "./db" } }
-2015-01-05T08:34:00.564+0100 [initandlisten] journal dir=./db/journal
-2015-01-05T08:34:00.564+0100 [initandlisten] recover begin
-2015-01-05T08:34:00.565+0100 [initandlisten] recover lsn: 628471
-2015-01-05T08:34:00.565+0100 [initandlisten] recover ./db/journal/j._0
-2015-01-05T08:34:00.566+0100 [initandlisten] recover skipping application of section seq:0 < lsn:628471
-2015-01-05T08:34:00.566+0100 [initandlisten] recover skipping application of section seq:159295 < lsn:628471
-2015-01-05T08:34:00.567+0100 [initandlisten] recover skipping application of section seq:367726 < lsn:628471
-2015-01-05T08:34:00.572+0100 [initandlisten] recover cleaning up
-2015-01-05T08:34:00.572+0100 [initandlisten] removeJournalFiles
-2015-01-05T08:34:00.572+0100 [initandlisten] recover done
-2015-01-05T08:34:00.638+0100 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 0.0.0.0:27017
-2015-01-05T08:34:00.638+0100 [initandlisten] ERROR:   addr already in use
-2015-01-05T08:34:00.714+0100 [initandlisten] now exiting
-2015-01-05T08:34:00.714+0100 [initandlisten] dbexit: 
-2015-01-05T08:34:00.714+0100 [initandlisten] shutdown: going to close listening sockets...
-2015-01-05T08:34:00.714+0100 [initandlisten] shutdown: going to flush diaglog...
-2015-01-05T08:34:00.714+0100 [initandlisten] shutdown: going to close sockets...
-2015-01-05T08:34:00.714+0100 [initandlisten] shutdown: waiting for fs preallocator...
-2015-01-05T08:34:00.714+0100 [initandlisten] shutdown: lock for final commit...
-2015-01-05T08:34:00.714+0100 [initandlisten] shutdown: final commit...
-2015-01-05T08:34:00.716+0100 [initandlisten] shutdown: closing all files...
-2015-01-05T08:34:00.716+0100 [initandlisten] closeAllFiles() finished
-2015-01-05T08:34:00.716+0100 [initandlisten] journalCleanup...
-2015-01-05T08:34:00.716+0100 [initandlisten] removeJournalFiles
-2015-01-05T08:34:00.717+0100 [initandlisten] shutdown: removing fs lock...
-2015-01-05T08:34:00.717+0100 [initandlisten] dbexit: really exiting now
+2015-01-05T08:48:01.502+0100 [initandlisten] MongoDB starting : pid=23765 port=27017 dbpath=./db 64-bit host=Andreas-iMac.local
+2015-01-05T08:48:01.502+0100 [initandlisten] db version v2.6.6
+2015-01-05T08:48:01.502+0100 [initandlisten] git version: 608e8bc319627693b04cc7da29ecc300a5f45a1f
+2015-01-05T08:48:01.502+0100 [initandlisten] build info: Darwin mci-osx108-3.build.10gen.cc 12.3.0 Darwin Kernel Version 12.3.0: Sun Jan  6 22:37:10 PST 2013; root:xnu-2050.22.13~1/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+2015-01-05T08:48:01.502+0100 [initandlisten] allocator: system
+2015-01-05T08:48:01.502+0100 [initandlisten] options: { storage: { dbPath: "./db" } }
+2015-01-05T08:48:01.510+0100 [initandlisten] journal dir=./db/journal
+2015-01-05T08:48:01.510+0100 [initandlisten] recover : no journal files present, no recovery needed
+2015-01-05T08:48:01.534+0100 [initandlisten] waiting for connections on port 27017
+2015-01-05T08:48:01.819+0100 [initandlisten] connection accepted from 127.0.0.1:58978 #1 (1 connection now open)
+2015-01-05T08:48:01.820+0100 [initandlisten] connection accepted from 127.0.0.1:58979 #2 (2 connections now open)
+2015-01-05T08:48:01.821+0100 [initandlisten] connection accepted from 127.0.0.1:58980 #3 (3 connections now open)
+2015-01-05T08:48:01.822+0100 [initandlisten] connection accepted from 127.0.0.1:58981 #4 (4 connections now open)
+2015-01-05T08:48:01.823+0100 [initandlisten] connection accepted from 127.0.0.1:58982 #5 (5 connections now open)
+2015-01-05T08:48:01.834+0100 [conn4] build index on: memo.users properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "memo.users" }
+2015-01-05T08:48:01.834+0100 [conn4] 	 added index to empty collection
+2015-01-05T08:48:01.834+0100 [conn4] build index on: memo.users properties: { v: 1, unique: true, key: { local.email: 1 }, name: "local.email_1", ns: "memo.users", background: true, safe: null }
+2015-01-05T08:48:01.834+0100 [conn4] 	 added index to empty collection
+2015-01-05T08:48:34.839+0100 [initandlisten] connection accepted from 127.0.0.1:58984 #6 (6 connections now open)
+2015-01-05T08:49:01.575+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T08:49:01.575+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T08:49:01.575+0100 [clientcursormon]  connections:6
+2015-01-05T08:54:01.833+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T08:54:01.833+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T08:54:01.833+0100 [clientcursormon]  connections:6
+2015-01-05T08:59:02.196+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T08:59:02.197+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T08:59:02.197+0100 [clientcursormon]  connections:6
+2015-01-05T09:23:13.620+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T09:23:13.620+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T09:23:13.620+0100 [clientcursormon]  connections:6
+2015-01-05T09:28:13.870+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T09:28:13.870+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T09:28:13.870+0100 [clientcursormon]  connections:6
+2015-01-05T09:33:14.102+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T09:33:14.102+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T09:33:14.102+0100 [clientcursormon]  connections:6
+2015-01-05T09:38:14.354+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T09:38:14.354+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T09:38:14.354+0100 [clientcursormon]  connections:6
+2015-01-05T09:43:14.604+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T09:43:14.604+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T09:43:14.604+0100 [clientcursormon]  connections:6
+2015-01-05T09:48:15.056+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T09:48:15.056+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T09:48:15.056+0100 [clientcursormon]  connections:6
+2015-01-05T09:54:09.985+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T09:54:09.985+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T09:54:09.985+0100 [clientcursormon]  connections:6
+2015-01-05T09:54:33.809+0100 [conn5] end connection 127.0.0.1:58982 (5 connections now open)
+2015-01-05T09:54:33.809+0100 [conn4] end connection 127.0.0.1:58981 (5 connections now open)
+2015-01-05T09:54:33.809+0100 [conn3] end connection 127.0.0.1:58980 (5 connections now open)
+2015-01-05T09:54:33.809+0100 [conn2] end connection 127.0.0.1:58979 (4 connections now open)
+2015-01-05T09:54:33.809+0100 [conn1] end connection 127.0.0.1:58978 (4 connections now open)
+2015-01-05T09:54:57.943+0100 [initandlisten] connection accepted from 127.0.0.1:59272 #7 (2 connections now open)
+2015-01-05T09:54:57.945+0100 [initandlisten] connection accepted from 127.0.0.1:59273 #8 (3 connections now open)
+2015-01-05T09:54:57.945+0100 [initandlisten] connection accepted from 127.0.0.1:59274 #9 (4 connections now open)
+2015-01-05T09:54:57.946+0100 [initandlisten] connection accepted from 127.0.0.1:59275 #10 (5 connections now open)
+2015-01-05T09:54:57.947+0100 [initandlisten] connection accepted from 127.0.0.1:59276 #11 (6 connections now open)
+2015-01-05T09:56:06.406+0100 [conn11] end connection 127.0.0.1:59276 (5 connections now open)
+2015-01-05T09:56:06.406+0100 [conn10] end connection 127.0.0.1:59275 (5 connections now open)
+2015-01-05T09:56:06.406+0100 [conn9] end connection 127.0.0.1:59274 (5 connections now open)
+2015-01-05T09:56:06.406+0100 [conn8] end connection 127.0.0.1:59273 (5 connections now open)
+2015-01-05T09:56:06.406+0100 [conn7] end connection 127.0.0.1:59272 (4 connections now open)
+2015-01-05T09:56:06.754+0100 [initandlisten] connection accepted from 127.0.0.1:59281 #12 (2 connections now open)
+2015-01-05T09:56:06.756+0100 [initandlisten] connection accepted from 127.0.0.1:59282 #13 (3 connections now open)
+2015-01-05T09:56:06.756+0100 [initandlisten] connection accepted from 127.0.0.1:59283 #14 (4 connections now open)
+2015-01-05T09:56:06.757+0100 [initandlisten] connection accepted from 127.0.0.1:59284 #15 (5 connections now open)
+2015-01-05T09:56:06.758+0100 [initandlisten] connection accepted from 127.0.0.1:59285 #16 (6 connections now open)
+2015-01-05T09:56:15.795+0100 [conn16] end connection 127.0.0.1:59285 (5 connections now open)
+2015-01-05T09:56:15.795+0100 [conn15] end connection 127.0.0.1:59284 (5 connections now open)
+2015-01-05T09:56:15.795+0100 [conn14] end connection 127.0.0.1:59283 (5 connections now open)
+2015-01-05T09:56:15.795+0100 [conn12] end connection 127.0.0.1:59281 (5 connections now open)
+2015-01-05T09:56:15.795+0100 [conn13] end connection 127.0.0.1:59282 (5 connections now open)
+2015-01-05T09:56:16.182+0100 [initandlisten] connection accepted from 127.0.0.1:59286 #17 (2 connections now open)
+2015-01-05T09:56:16.183+0100 [initandlisten] connection accepted from 127.0.0.1:59287 #18 (3 connections now open)
+2015-01-05T09:56:16.184+0100 [initandlisten] connection accepted from 127.0.0.1:59288 #19 (4 connections now open)
+2015-01-05T09:56:16.185+0100 [initandlisten] connection accepted from 127.0.0.1:59289 #20 (5 connections now open)
+2015-01-05T09:56:16.185+0100 [initandlisten] connection accepted from 127.0.0.1:59290 #21 (6 connections now open)
+2015-01-05T09:56:49.340+0100 [conn21] end connection 127.0.0.1:59290 (5 connections now open)
+2015-01-05T09:56:49.340+0100 [conn19] end connection 127.0.0.1:59288 (5 connections now open)
+2015-01-05T09:56:49.340+0100 [conn20] end connection 127.0.0.1:59289 (4 connections now open)
+2015-01-05T09:56:49.340+0100 [conn18] end connection 127.0.0.1:59287 (2 connections now open)
+2015-01-05T09:56:49.340+0100 [conn17] end connection 127.0.0.1:59286 (2 connections now open)
+2015-01-05T09:56:49.695+0100 [initandlisten] connection accepted from 127.0.0.1:59292 #22 (2 connections now open)
+2015-01-05T09:56:49.696+0100 [initandlisten] connection accepted from 127.0.0.1:59293 #23 (3 connections now open)
+2015-01-05T09:56:49.696+0100 [initandlisten] connection accepted from 127.0.0.1:59294 #24 (4 connections now open)
+2015-01-05T09:56:49.697+0100 [initandlisten] connection accepted from 127.0.0.1:59295 #25 (5 connections now open)
+2015-01-05T09:56:49.697+0100 [initandlisten] connection accepted from 127.0.0.1:59296 #26 (6 connections now open)
+2015-01-05T09:59:10.218+0100 [clientcursormon] mem (MB) res:33 virt:2814
+2015-01-05T09:59:10.218+0100 [clientcursormon]  mapped (incl journal view):320
+2015-01-05T09:59:10.218+0100 [clientcursormon]  connections:6
